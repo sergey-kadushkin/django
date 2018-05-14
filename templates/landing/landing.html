@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel='stylesheet' href="{% static 'style.css' %} }">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3g-12">
+            <h1>Наш магазин скоро откроется</h1>
+            <h1>Оставляйте ваш Email в форме ниже</h1>
+            <div>
+                <form action="" method="post">{% csrf_token %}
+                {{ form.as p }}
+                    <div>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
